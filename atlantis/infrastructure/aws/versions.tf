@@ -9,4 +9,9 @@ terraform {
       version = "~> 3.0"
     }
   }
+  backend "s3" {
+    bucket = "terraform-20221206184034105500000001"
+    key = "atlantis.tfstate"
+    region = "us-west-1"
+  }
 }
