@@ -10,7 +10,7 @@ variable "domain_name" {
 variable "host_name" {
     type = string
     description = <<-EOT
-        Public name of the service.
+        Public name of the service..
         Will be concatenated with the domain_name to form the fqdn.
     EOT
     default = "atlantis"
